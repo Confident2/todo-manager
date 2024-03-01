@@ -34,6 +34,12 @@ export default class ListTemplate implements DOMList {
 
       check.addEventListener("change", () => {
         item.checked = !item.checked;
+        // if (item.checked) {
+        //   console.log("checked");
+        // } else {
+        //   console.log("unchecked");
+        // }
+
         fullList.save();
       });
 
